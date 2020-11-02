@@ -26,7 +26,7 @@ public class process {
             if (word.HP > 0 && word1.HP > 0) {
                 i++;
             } else if (word1.HP <= 0 && word.HP > 0) {
-                System.out.println(word1.name + "打败了" + word.name + "。");
+                System.out.println(word.name + "打败了" + word1.name + "。");
                 break;
             } else if (word.HP <= 0 && word1.HP <= 0) {
                 System.out.println("两人同归于尽！");
@@ -35,7 +35,7 @@ public class process {
                 System.out.println("这俩人无法让对方受到伤害。（打假赛）");
                 break;
             } else if(word.HP<=0&&word1.HP>0) {
-                System.out.println(word.name + "打败了" + word1.name + "。");
+                System.out.println(word1.name + "打败了" + word.name + "。");
                 break;
             }
         }
